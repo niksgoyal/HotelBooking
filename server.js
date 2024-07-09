@@ -58,4 +58,4 @@ app.put("/notes/:id", requireAuth, notesController.updateNote);
 app.delete("/notes/:id", requireAuth, notesController.deleteNote);
 
 //start our server
-app.listen(process.env.PORT);
+app.listen(process.env.PORT || 8000);
