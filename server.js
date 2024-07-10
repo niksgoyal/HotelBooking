@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://hotelbooking-flax.vercel.app/",
+    origin:true,
     credentials: true,
   })
 );
